@@ -10,7 +10,9 @@ import java.util.function.Predicate;
 public class RouterValidator {
 
     public static final List<String> openEndpoints = List.of(
-            "/auth", "/swagger-ui.html", "/v3/api-docs"
+            "/auth",
+            "/swagger-ui.html",
+            "/v3/api-docs"
     );
 
     public Predicate<ServerHttpRequest> isSecured = serverHttpRequest ->
